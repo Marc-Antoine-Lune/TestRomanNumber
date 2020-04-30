@@ -15,6 +15,10 @@ public class RomanNumber {
 					this.roman += "I" + romanArray[1];
 					n -= numbersArray[1];
 				}
+				if(n == numbersArray[2]-1) {
+					this.roman += "I" + romanArray[2];
+					n -= numbersArray[2];
+				}
 				if(n >= numbersArray[i]) {
 					while(n>=numbersArray[i]) {
 						this.roman += this.romanArray[i];
