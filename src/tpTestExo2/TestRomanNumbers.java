@@ -42,6 +42,12 @@ class TestRomanNumbers {
 	assertEquals("D", roman.toString());
 	}
 	
+	@Test
+	public void testConvertsTheNumber1000ToStringM() {
+	var roman = new RomanNumber(1000);
+	assertEquals("M", roman.toString());
+	}
+	
 	
 
 }

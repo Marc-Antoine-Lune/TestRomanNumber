@@ -10,7 +10,7 @@ public class RomanNumber {
 	else if (n== 50) this.roman = "L";
 	else if (n== 100) this.roman = "C";
 	else if (n== 500) this.roman = "D";
-
+	else if (n== 1000) this.roman = "M";
 	}
 	
 	@Override
