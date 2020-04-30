@@ -15,8 +15,8 @@ public class RomanNumber {
 		this.roman = romanArray[index];	
 		else {
 			for (int i=this.numbersArray.length-1 ; i>=0; i--) {
-				if(n % this.numbersArray[i] == 0) {
-					while(n>0) {
+				if(n > numbersArray[i]) {
+					while(n>=numbersArray[i]) {
 						this.roman += this.romanArray[i];
 						n -= this.numbersArray[i];
 					}

@@ -73,6 +73,12 @@ class TestRomanNumbers {
 	assertEquals("CC", roman.toString());
 	}
 	
+	@Test
+	public void testConvertsTheNumber120ToStringCXX() {
+	var roman = new RomanNumber(120);
+	assertEquals("CXX", roman.toString());
+	}
+	
 
 
 }
