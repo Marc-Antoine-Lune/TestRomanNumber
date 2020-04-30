@@ -30,6 +30,12 @@ class TestRomanNumbers {
 	assertEquals("L", roman.toString());
 	}
 	
+	@Test
+	public void testConvertsTheNumber100ToStringC() {
+	var roman = new RomanNumber(100);
+	assertEquals("C", roman.toString());
+	}
+	
 	
 
 }

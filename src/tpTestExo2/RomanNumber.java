@@ -8,6 +8,8 @@ public class RomanNumber {
 	else if (n == 5) this.roman = "V";
 	else if (n == 10) this.roman = "X";
 	else if (n== 50) this.roman = "L";
+	else if (n== 100) this.roman = "C";
+
 	}
 	
 	@Override
