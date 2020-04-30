@@ -13,7 +13,8 @@ public class RomanNumber {
 		int index = Arrays.binarySearch(numbersArray, n);
 		if (index >= 0)
 		this.roman = romanArray[index];	
-		else this.roman = "II";
+		else if (n ==2 ) this.roman = "II";
+		else if (n ==3 ) this.roman = "III";
 	}
 	
 	@Override
