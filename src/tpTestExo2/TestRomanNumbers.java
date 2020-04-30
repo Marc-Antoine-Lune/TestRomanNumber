@@ -109,6 +109,30 @@ class TestRomanNumbers {
 	assertEquals("XC", roman.toString());
 	}
 	
+	@Test
+	public void testConvertsTheNumber400ToStringCD() {
+	var roman = new RomanNumber(400);
+	assertEquals("CD", roman.toString());
+	}
+	
+	@Test
+	public void testConvertsTheNumber900ToStringXC() {
+	var roman = new RomanNumber(900);
+	assertEquals("CM", roman.toString());
+	}
+	
+	@Test
+	public void testConvertsTheNumber9999ToStringIXMCMXCIX() {
+	var roman = new RomanNumber(9999);
+	assertEquals("IXMCMXCIX", roman.toString());
+	}
+	
+	@Test
+	public void testConvertsTheNumber4444ToStringIVMCDILIV() {
+	var roman = new RomanNumber(4444);
+	assertEquals("IVMCDXLIV", roman.toString());
+	}
+	
 
 
 }
