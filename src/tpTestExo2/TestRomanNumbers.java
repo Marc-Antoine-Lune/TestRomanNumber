@@ -85,6 +85,12 @@ class TestRomanNumbers {
 	assertEquals("CCCXXXI", roman.toString());
 	}
 	
+	@Test
+	public void testConvertsTheNumber4ToStringIV() {
+	var roman = new RomanNumber(4);
+	assertEquals("IV", roman.toString());
+	}
+	
 
 
 }

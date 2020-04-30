@@ -11,6 +11,10 @@ public class RomanNumber {
 	
 	public RomanNumber(int n) {
 			for (int i=this.numbersArray.length-1 ; i>=0; i--) {
+				if(n == numbersArray[1]-1) {
+					this.roman += "I" + romanArray[1];
+					n -= numbersArray[1];
+				}
 				if(n >= numbersArray[i]) {
 					while(n>=numbersArray[i]) {
 						this.roman += this.romanArray[i];
