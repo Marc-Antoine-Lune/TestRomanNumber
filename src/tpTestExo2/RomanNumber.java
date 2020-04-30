@@ -10,19 +10,14 @@ public class RomanNumber {
 	
 	
 	public RomanNumber(int n) {
-		int index = Arrays.binarySearch(numbersArray, n);
-		if (index >= 0)
-		this.roman = romanArray[index];	
-		else {
 			for (int i=this.numbersArray.length-1 ; i>=0; i--) {
-				if(n > numbersArray[i]) {
+				if(n >= numbersArray[i]) {
 					while(n>=numbersArray[i]) {
 						this.roman += this.romanArray[i];
 						n -= this.numbersArray[i];
 					}
 				}
 			}
-		}
 	}
 	
 	@Override
