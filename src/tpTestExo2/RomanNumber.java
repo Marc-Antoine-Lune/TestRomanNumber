@@ -13,15 +13,14 @@ public class RomanNumber {
 		int index = Arrays.binarySearch(numbersArray, n);
 		if (index >= 0)
 		this.roman = romanArray[index];	
-		else if (n % 10 == 0){
-			while( n>0 ) {
-				this.roman += "X";
-				n -= 10;
-			}
-		}else {
-			while (n > 0) {
-				this.roman += "I";
-				n--;
+		else {
+			for (int i=this.numbersArray.length-1 ; i>=0; i--) {
+				if(n % this.numbersArray[i] == 0) {
+					while(n>0) {
+						this.roman += this.romanArray[i];
+						n -= this.numbersArray[i];
+					}
+				}
 			}
 		}
 	}
