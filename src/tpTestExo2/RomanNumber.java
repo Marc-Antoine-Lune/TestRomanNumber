@@ -1,16 +1,17 @@
 package tpTestExo2;
 
+import java.util.Arrays;
+
 public class RomanNumber {
 	
 	private String roman;
+	private int[] numbersArray = {1, 5, 10, 50, 100, 500, 1000}; 
+	private String[] romanArray = {"I", "V", "X", "L", "C", "D", "M"};
+	
+	
 	public RomanNumber(int n) {
-	if (n == 1 ) this.roman = "I";
-	else if (n == 5) this.roman = "V";
-	else if (n == 10) this.roman = "X";
-	else if (n== 50) this.roman = "L";
-	else if (n== 100) this.roman = "C";
-	else if (n== 500) this.roman = "D";
-	else if (n== 1000) this.roman = "M";
+		int index = Arrays.binarySearch(numbersArray, n);
+		this.roman = romanArray[index];	
 	}
 	
 	@Override
