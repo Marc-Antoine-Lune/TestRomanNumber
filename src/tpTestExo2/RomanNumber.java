@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class RomanNumber {
 	
-	private String roman;
+	private String roman= "";
 	private int[] numbersArray = {1, 5, 10, 50, 100, 500, 1000}; 
 	private String[] romanArray = {"I", "V", "X", "L", "C", "D", "M"};
 	
@@ -13,8 +13,12 @@ public class RomanNumber {
 		int index = Arrays.binarySearch(numbersArray, n);
 		if (index >= 0)
 		this.roman = romanArray[index];	
-		else if (n ==2 ) this.roman = "II";
-		else if (n ==3 ) this.roman = "III";
+		else {
+			while( n>0 ) {
+				this.roman += "I";
+				n--;
+			}
+		}
 	}
 	
 	@Override
