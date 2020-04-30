@@ -11,7 +11,9 @@ public class RomanNumber {
 	
 	public RomanNumber(int n) {
 		int index = Arrays.binarySearch(numbersArray, n);
+		if (index >= 0)
 		this.roman = romanArray[index];	
+		else this.roman = "II";
 	}
 	
 	@Override
