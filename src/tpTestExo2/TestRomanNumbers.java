@@ -11,5 +11,11 @@ class TestRomanNumbers {
 	var roman = new RomanNumber(1);
 	assertEquals("I", roman.toString());
 	}
+	
+	@Test
+	public void testConvertsTheNumber5ToStringV() {
+	var roman = new RomanNumber(5);
+	assertEquals("V", roman.toString());
+	}
 
 }
