@@ -97,6 +97,18 @@ class TestRomanNumbers {
 	assertEquals("IX", roman.toString());
 	}
 	
+	@Test
+	public void testConvertsTheNumber40ToStringXL() {
+	var roman = new RomanNumber(40);
+	assertEquals("XL", roman.toString());
+	}
+	
+	@Test
+	public void testConvertsTheNumber90ToStringXC() {
+	var roman = new RomanNumber(90);
+	assertEquals("XC", roman.toString());
+	}
+	
 
 
 }
