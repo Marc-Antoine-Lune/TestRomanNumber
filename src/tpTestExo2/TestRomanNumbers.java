@@ -17,5 +17,19 @@ class TestRomanNumbers {
 	var roman = new RomanNumber(5);
 	assertEquals("V", roman.toString());
 	}
+	
+	@Test
+	public void testConvertsTheNumber10ToStringX() {
+	var roman = new RomanNumber(10);
+	assertEquals("X", roman.toString());
+	}
+	
+	@Test
+	public void testConvertsTheNumber50ToStringL() {
+	var roman = new RomanNumber(50);
+	assertEquals("L", roman.toString());
+	}
+	
+	
 
 }

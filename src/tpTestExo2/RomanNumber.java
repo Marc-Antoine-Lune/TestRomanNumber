@@ -6,6 +6,8 @@ public class RomanNumber {
 	public RomanNumber(int n) {
 	if (n == 1 ) this.roman = "I";
 	else if (n == 5) this.roman = "V";
+	else if (n == 10) this.roman = "X";
+	else if (n== 50) this.roman = "L";
 	}
 	
 	@Override
